@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/pokeball.png">
+    <title>Pokedex</title>
+</head>
+
+<body onload="loadPokemonData()">
+    <header>
+        <img src="./img/pokeball.png" alt="">
+        <h1>Pokedex</h1>
+    </header>
+    <div id="top"></div>
+    <div id="pokedex">
+    </div>
+    <div class="allBtns">
+        <button id="nextButton" class="btn btn_red d-none" onclick="nextPokemon()">Next Card Deck</button>
+        <div class="loadAnimation">
+            <div id="loading">
+                <div class="pokeball" id="normal"></div>
+                <div class="pokeball" id="great"></div>
+                <div class="pokeball" id="ultra"></div>
+                <div class="pokeball" id="master"></div>
+                <div class="pokeball" id="safari"></div>
+            </div>
+        </div>
+        <a id="goToTop" class="btn btn_red top d-none" href="#top">Go to Top</a>
+    </div>
+    <div id="popUpCard" class="d-none">
+        <div class="innerCard">
+            <h1>pikachu</h1>
+            <img src="./img/pokeball.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
